@@ -3,8 +3,11 @@ using System.Globalization;
 
 namespace CarLotSimulator;
 
-public class Car
+public class Car 
 {
+    //ClassName.Static Member
+    
+    
     //Create a seperate class file called Car
     //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
     //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
@@ -34,7 +37,9 @@ public class Car
 
     public Car()
     {
-        
+        {
+            CarLot.numberOfCars++;
+        }
     }
 
     public Car(string make, string model, int year, bool isDriveable)
